@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de paneles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cuantos paneles solares necesitas?</h1>
+     <h4>Se sugiere ingresar medidas en <strong style="color:red">-"metros"-</strong> , 
+        por ejemplo si el ancho es de 3 metros, ingrese solo el numero '3'.</h4> 
+        <h5>por ahora no contabilizamos valores flotantes, solo enteros, espero puedan comprender.</h5>
+    <form action="" id="formSolar">
+        <fieldset>
+            <legend>Acá abajo lo puedes saber en <strong>3</strong> simples pasos</legend>
+                <p>Paso 1.- Rellena las casillas con las dimensiones que se piden a continuacion:</p>
+                <label for="ancho_techo">Ancho del techo:</label>
+                    <input type="number" name="ancho_techo" id="ancho_techo" min="1" pattern="/[0-9]+/" required/>
+                <label for="largo_techo">Largo del techo:</label>
+                    <input type="number" name="largo_techo" id="largo_techo" min="1" pattern="/[0-9]+/" required>
+            <hr>
+            <p>Paso 2.- Rellena estas otras casillas con las dimensiones que se piden a continuacion:</p>
+            <p>
+                <label for="ancho_panel">Ancho del panel:</label>
+                    <input type="number" name="ancho_panel" id="ancho_panel" min="1" pattern="/[0-9]+/" required/>
+                <label for="largo_panel">Largo del panel:</label>
+                    <input type="number" name="largo_panel" id="largo_panel" min="1" pattern="/[0-9]+/" required/>
+            </p>
+            <hr>
+            <p>Paso 3.- Pulsa el boton:</p>
+            <p>
+                <input type="submit" value="Calcular">
+            </p>
+        </fieldset>
+    </form>
+    <h3 id="resultado"></h3>
+    <p id="limpiar"></p>
+    <script src="script.js"></script>
+</body>
+</html>

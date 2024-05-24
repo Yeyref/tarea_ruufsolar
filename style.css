@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    margin: 0 auto;
+    background-color: beige;
+  }
+
+  h1, h3, h4, h5, form, #limpiar{
+   display: flex;
+   justify-content: center;
+  }
